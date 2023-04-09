@@ -1,5 +1,9 @@
 const form = document.querySelector('#myForm');
 const submitBtn = document.getElementById('submitBtn');
+const myDiv = document.getElementById('loading');
+const myDiv2 = document.getElementById('loader');
+const loader = document.getElementById('loader');
+
 function submitForm(e) {
     e.preventDefault();
     const formData = new FormData(form);
@@ -21,7 +25,9 @@ function submitForm(e) {
       e.preventDefault();
       const data = new FormData(form);
       const action = e.target.action;
-      submitBtn.classList.add('loading');
+      loader.classList.add('loader');
+    //   myDiv2.style.display = 'none';
+      myDiv.style.display = 'none';
       fetch(action, {
         method: 'POST',
         body: data,
