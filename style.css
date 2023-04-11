@@ -8,6 +8,16 @@
   }
   .titleclass {
     color: #f7f7f7;
+    background-color: #0c0a0a;
+opacity: 0.9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .visitor{
+    align-items: center;
+    justify-content: center;
+
   }
   /* make the form fields responsive */
   form {
@@ -19,6 +29,7 @@
     background-color: #fefefe;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0.95;
   }
 
   label,
@@ -34,11 +45,11 @@
     color: #333;
 
   }
-  
+
   textarea {
     height: 100px;
   }
-  
+
   input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -47,17 +58,17 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   input[type="submit"]:hover {
     background-color: #45a049;
   }
-  
+
   /* make the thank you message responsive */
   .thankyou-message {
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -79,9 +90,19 @@
     animation: spin 2s linear infinite;
     margin-right: 10px;
   }
-  
+
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
 
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 10px;
+    }
+    
+    input,
+    textarea {
+      font-size: 14px;
+    }
+  }
