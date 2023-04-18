@@ -32,7 +32,7 @@ opacity: 0.9;
     opacity: 0.95;
   }
 
-  label,
+/*   label,
   input,
   textarea {
     display: block;
@@ -49,7 +49,7 @@ opacity: 0.9;
   textarea {
     height: 100px;
   }
-
+ */
   input[type="submit"] {
     background-color: #4CAF50;
     color: white;
